@@ -3,7 +3,7 @@
   <head>
 
   </head>
-  <h1> Helloe </h1>
+  <h1> Hello </h1>
   <body>
 
   </body>
