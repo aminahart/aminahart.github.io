@@ -6,26 +6,26 @@ var clicks = 0;
 var removing = false
 
 function setup() {
-  createCanvas(1425, 600);
-  // createCanvas(800, 600)
+ //createCanvas(1425, 600);
+  createCanvas(displayWidth, displayHeight)
   colE = createElement('h1', 'Choose a ball color');
-  colE.position(0, height + 60);
+  colE.position(0, displayheight - 100);
   col = createInput();
-  col.position(0, height + 115);
+  col.position(0, displayheight - 80);
 
   backE = createElement('h1', 'Choose a background color');
-  backE.position(0, height + 120);
+  backE.position(0, displayheight - 60);
   back = createInput('grey');
-  back.position(0, height + 180);
+  back.position(0, displayheight - 40);
   x = createElement('h1', 'There are ' + clicks + ' balls')
-  x.position(400, height + 60)
+  x.position(400, displayheight - 100)
 
   reset = createButton('reset')
-  reset.position(width - 40, height + 80)
+  reset.position(displaywidth - 40, displayheight - 80)
   reset.mousePressed(update)
   
   i = createElement('h1', 'Click the screen')
-  i.position( 420, height + 120)
+  i.position( 420, height - 120)
 }
 
 function mousePressed() {
