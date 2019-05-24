@@ -77,9 +77,5 @@ function draw() {
 
   if (keyIsDown(32)) {
     removeballs()
-    // print('remove')
-    // removing = true
-    // }else{
-    //   removing = false
   }
 }
