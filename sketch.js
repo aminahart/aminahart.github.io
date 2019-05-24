@@ -82,7 +82,6 @@ function draw() {
     // }else{
     //   removing = false
   }
-}
   }
 }
 
