@@ -11,7 +11,7 @@ let white = 245;
 
 //set happens just once
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
   strokeWeight(8);
   frameRate(3);
 }
