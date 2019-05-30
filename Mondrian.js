@@ -3,20 +3,19 @@
 //February 12, 2019
 //Onlines Games and Interactivity
 
-let yellow = [234, 210, 51];
-let blue = [15, 40, 140];
-let red = [266, 10, 10];
-let black = [25, 20, 20];
-let white = 245;
+var yellow = [234, 210, 51];
+var blue = [15, 40, 140];
+var red = [266, 10, 10];
+var black = [25, 20, 20];
+var white = 245;
 
-//set happens just once
 function setup() {
-  createCanvas(800, 800);
+  c = createCanvas(400, 400);
+  c.position(225, 75);
   strokeWeight(8);
   frameRate(3);
 }
 
-//Draw repeats over and over again
 function draw() {
   background(255);
   length = (int)(random(20, 350));
@@ -26,12 +25,10 @@ function draw() {
   heightI = (int)(random(20, 300));
 
   if (mouseIsPressed) {
-    // print('The Mouse was pressed!')
     blue = [(int)(random(1, 256)), (int)(random(1, 256)), (int)(random(1, 256))];
     red = [(int)(random(1, 256)), (int)(random(1, 256)), (int)(random(1, 256))];
     yellow = [(int)(random(1, 256)), (int)(random(1, 256)), (int)(random(1, 256))];
     black = [(int)(random(1, 256)), (int)(random(1, 256)), (int)(random(1, 256))];
-    // print(mouseX, mouseY);
 
   } else {
     yellow = [234, 210, 51];
@@ -65,5 +62,4 @@ function draw() {
   rect(50, 350, length, 50);
   fill(white);
   rect(length + 50, 350, 350 - length, 50);
-
 }

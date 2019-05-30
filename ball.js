@@ -43,7 +43,7 @@ class Ball {
     this.y = this.y + this.speedy;
   }
 
-  show(col) {
+  show() {
     strokeWeight(2);
     noStroke();
     fill(this.col);
