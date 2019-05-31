@@ -86,7 +86,7 @@ class Character {
 function setup() {
   c = createCanvas(1000, 500);
   c.position(225, 75);
-  mainCharacter = new Character(200, 200, 100);
+  mainCharacter = new Character(200, 200, 60);
   backgroundImage = loadImage("./pixelback.png");
   mainCharacterImage = loadImage("./batmanright.png");
   monsterImage = loadImage("./jokerleft.png");
