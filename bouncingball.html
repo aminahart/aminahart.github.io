@@ -7,47 +7,45 @@
 
     <title>Bouncing ball</title>
     <style>
+        body {
+            font-size: 28px;
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: rgba(50, 200, 240, 50);
-            text-align:center;
-            width: 15%;
-            height: 100%; /* Full height */
-            position: fixed; /* Make it stick, even on scroll */
-            overflow: auto; /* Enable scrolling if the sidenav has too much content */
+            overflow: hidden;
+            background-color: #0096f1;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
         }
+
+        li {
+            float: left;
+        }
+
         li a {
             display: block;
-            color:rgba(50, 200, 240, 50);
-            padding: 8px 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
         }
-        a:link {
-            color: rgba(0,0,0,255);
-            background-color: transparent;
-            text-decoration: none;
+
+        li a:hover {
+            background-color: #0080cb;
         }
-        a:visited {
-            color: rgba(0, 0, 0, 255);
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:hover {
-            color: rgba(56, 64, 241, 0.73);
-            background-color: transparent;
-            text-decoration: underline;
-        }
-        a:active {
-            color: rgba(194, 29, 255, 255);
-            background-color: transparent;
-            text-decoration: underline;
+
+        .active {
+            background-color: rgba(194, 29, 255, 0);
         }
     </style>
 
   </head>
-  <body><h1 style="color:rgba(60,255,200,0.37);"> Bouncing Ball by Amina Hart </h1>
+  <body>
+  <h3 style="color:black;"> Bouncing Ball by Amina Hart </h3>
   
     <script src="bouncingball.js"></script>
     <script src="ball.js"></script>

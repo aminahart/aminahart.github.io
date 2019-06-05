@@ -1,33 +1,34 @@
 var ball;
 var balls = [];
-var numballs;
+// var numballs;
 var clicks = 0;
 var removing = false;
 
 function setup() {
-  c =createCanvas(1200, 600);
-  var canvasX = 225;
-  var canvasY = 75
+  c =createCanvas(displayWidth, 600);
+  var canvasX = 0;
+  var canvasY = 175;
   c.position(canvasX, canvasY);
   // createCanvas(800, 600)
-  colE = createElement('h1', 'Choose a ball color');
-  colE.position(canvasX, height + 60);
+  colE = createElement('h2', 'Choose a ball color');
+  colE.position(canvasX, height + 140);
   col = createInput();
-  col.position(canvasX, height + 115);
+  col.position(canvasX, height + 220);
 
-  backE = createElement('h1', 'Choose a background color');
-  backE.position(canvasX, height + 120);
-  back = createInput('grey');
-  back.position(canvasX, height + 180);
-  x = createElement('h1', 'There are ' + clicks + ' balls');
-  x.position(canvasX +400, height + 60);
+  backE = createElement('h2', 'Choose a background color');
+  backE.position(canvasX + 400, height + 140);
+  back = createInput();
+  back.position(canvasX + 400, height + 220);
+
+  x = createElement('h2', 'There are ' + clicks + ' balls');
+  x.position(canvasX + 950, height + 140);
 
   reset = createButton('reset');
-  reset.position(canvasX+width - 40, height + 80);
+  reset.position(canvasX+width - 100, height + 180);
   reset.mousePressed(update);
-  
-  i = createElement('h1', 'Click the screen');
-  i.position(canvasX + 420, height + 120)
+  //
+  // i = createElement('h1', 'Click the screen');
+  // i.position(canvasX + 420, height + 120)
 }
 
 function mousePressed() {

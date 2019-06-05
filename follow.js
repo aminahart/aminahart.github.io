@@ -1,13 +1,13 @@
 function setup() {
-  c = createCanvas(1200, 700);
-  c.position (225, 75)
+  c = createCanvas(1100, 700);
+  c.position (0, 200)
 }
 
 function draw() {
-  let r = random(0, 255);
-  let g = random(0, 255);
-  let b = random(0, 255);
-  let l = random (50, 100);
+  var r = random(0, 255);
+  var g = random(0, 255);
+  var b = random(0, 255);
+  var l = random (50, 100);
 
   if (mouseIsPressed) {
     fill(r, g, b);

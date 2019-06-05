@@ -11,7 +11,7 @@ var white = 245;
 
 function setup() {
   c = createCanvas(400, 400);
-  c.position(225, 75);
+  c.position(0, 200);
   strokeWeight(8);
   frameRate(3);
 }

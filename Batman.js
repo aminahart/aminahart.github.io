@@ -2,7 +2,7 @@ var mainCharacter;
 var gravity = 9.8 / 30.0;
 var backgroundImage;
 var mainCharacterImage;
-var weaponImage;
+// var weaponImage;
 var monsterImage;
 var groundOffset = 30;
 var monsterArray = [];
@@ -21,7 +21,7 @@ class Character {
     this.color = "blue";
     this.isMonster = false;
     this.isDead = false;
-    this.targetX = random() * width;
+    // this.targetX = random() * width;
   }
 
   update() {
@@ -85,7 +85,7 @@ class Character {
 
 function setup() {
   c = createCanvas(1000, 500);
-  c.position(225, 75);
+  c.position(5, 200);
   mainCharacter = new Character(200, 200, 60);
   backgroundImage = loadImage("./pixelback.png");
   mainCharacterImage = loadImage("./batmanright.png");
@@ -111,17 +111,17 @@ function draw() {
   background(0, 200, 150);
   image(backgroundImage, 0, 0, width, height);
 
-  if (mainCharacterImage == loadImage("./batmanleft.png")) {
+  if (mainCharacterImage === loadImage("./batmanleft.png")) {
     isLeft = true;
   }
 
-  if (mainCharacterImage == loadImage("./batmanleft.png")) {
+  if (mainCharacterImage === loadImage("./batmanleft.png")) {
     isLeft = false;
   }
 
   if (keyIsDown(LEFT_ARROW)) {
     mainCharacter.xSpeed -= 1.0;
-    if (isLeft == false) {
+    if (isLeft === false) {
       mainCharacterImage = loadImage("./batmanleft.png");
       isLeft = true;
     }
@@ -129,7 +129,7 @@ function draw() {
 
   if (keyIsDown(RIGHT_ARROW)) {
     mainCharacter.xSpeed += 1;
-    if (isLeft == true) {
+    if (isLeft === true) {
       mainCharacterImage = loadImage("./batmanright.png");
       isLeft = false;
     }
@@ -166,7 +166,7 @@ function draw() {
     }
   }
   if (anyCatAlive === false) {
-    for (var i = 0; i < numBad; i++) {
+    for (i = 0; i < numBad; i++) {
       var newMonster = new Character(500 + 20 * i, height - 2, 60);
       newMonster.isMonster = true;
       monsterArray.push(newMonster);

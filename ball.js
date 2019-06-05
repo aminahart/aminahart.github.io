@@ -8,10 +8,8 @@ class Ball {
     this.r = random(20, 100);
     // this.col = [this.r* 2 ,this.r,this.r * 3 + 14, 100]
     this.isnew = true;
-    if (colInp === '') {
-      this.col = [random(0, 255), random(0, 255), random(0, 255), 100];
 
-    } else if (colInp === 'red') {
+    if (colInp === 'red') {
       this.col = [random(220, 255), random(0, 70), random(0, 70), 100];
 
     } else if (colInp === 'orange') {
@@ -35,8 +33,11 @@ class Ball {
     } else if (colInp === 'black') {
       var x = random(0, 75);
       this.col = [x, x, x, 100];
+    } else{
+      this.col = [random(0, 255), random(0, 255), random(0, 255), 100];
     }
-  }
+
+      }
 
   move() {
     this.x = this.x + this.speedx;
