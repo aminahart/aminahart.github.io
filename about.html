@@ -37,8 +37,8 @@
             background-color: #0080cb;
         }
 
-        .active {
-            background-color: rgba(194, 29, 255, 0);
+        li a.active {
+            background-color: rgba(8, 7, 112, 0.69);
         }
         h3 {
             font-style: normal;
@@ -50,11 +50,15 @@
 <h3> About</h3>
 <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="follow.html">Paint With Squares</a></li>
     <li><a href="bouncingball.html">Bubble Game</a></li>
     <li><a href="Mondrian.html">Mondrian Maker</a></li>
     <li><a href="batman.html">Batman Game</a></li>
-    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+            <a href="follow.html">Paint With Squares</a>
+            <a href="drawing.html">Paint</a>
+        </div>
 </ul>
 </body>
 </html>

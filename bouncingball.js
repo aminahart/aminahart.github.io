@@ -1,11 +1,10 @@
-var ball;
+// var ball;
 var balls = [];
-// var numballs;
 var clicks = 0;
 var removing = false;
 
 function setup() {
-  c =createCanvas(displayWidth, 600);
+  c = createCanvas(displayWidth, 600);
   var canvasX = 0;
   var canvasY = 175;
   c.position(canvasX, canvasY);

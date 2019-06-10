@@ -8,48 +8,6 @@
     <meta charset="utf-8">
 
     <title>Paint with Squares</title>
-    <style>
-        body {
-            font-size: 28px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #0096f1;
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-style: normal;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        li a:hover {
-            background-color: #0080cb;
-        }
-
-        .active {
-            background-color: rgba(194, 29, 255, 0);
-        }
-        h3 {
-            font-style: normal;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
   </head>
   <body>
     <script src="follow.js"></script>
@@ -57,11 +15,15 @@
   <h3>Paint With Squares</h3>
   <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="follow.html">Paint With Squares</a></li>
       <li><a href="bouncingball.html">Bubble Game</a></li>
       <li><a href="Mondrian.html">Mondrian Maker</a></li>
       <li><a href="batman.html">Batman Game</a></li>
-      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+              <a href="follow.html">Paint With Squares</a>
+              <a href="drawing.html">Paint</a>
+          </div>
   </ul>
 
 </body></html>
