@@ -1,7 +1,7 @@
 function setup() {
   // c = createCanvas(1100, 700);
   c = createCanvas(displayWidth, displayHeight-275);
-  c.position (0, 175)
+  // c.position (0, 175)
 }
 
 function draw() {

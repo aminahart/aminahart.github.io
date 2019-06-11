@@ -10,7 +10,7 @@ function setup() {
   reset.position(width - 40, height + 200);
   reset.mousePressed(update);
 
-  slider = createSlider(5, 50, 30);
+  slider = createSlider(5, 50, 30, 0);
   slider.position(400, height +200);
   slider.style('width', '150px');
 }

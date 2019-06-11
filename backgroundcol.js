@@ -4,7 +4,7 @@ var b;
 
 function setup() {
   c = createCanvas(displayWidth, displayHeight-275);
-  c.position(0, 175)
+  // c.position(0, 175)
 }
 
 function draw() {
